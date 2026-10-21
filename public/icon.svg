@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0878C9" />
+      <stop offset="100%" stop-color="#17365D" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#18864B" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FACC15" />
+      <stop offset="100%" stop-color="#D9AE52" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#17365D" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle / Shield -->
+  <rect width="512" height="512" rx="128" fill="url(#primaryGrad)" />
+
+  <!-- Inner Soft Container -->
+  <circle cx="256" cy="256" r="210" fill="#FFFFFF" fill-opacity="0.06" />
+  
+  <!-- Central Emblem: Caring Hands enveloping a Heart & Water Droplet / Spark of Hope -->
+  <g transform="translate(0, -10)" filter="url(#shadow)">
+    <!-- Protective Caring Hands Curve Left -->
+    <path d="M 140 320 C 130 260, 155 190, 205 160 C 215 154, 224 168, 218 178 C 178 220, 165 270, 185 320 C 195 345, 160 355, 140 320 Z" fill="url(#goldGrad)" />
+    
+    <!-- Protective Caring Hands Curve Right -->
+    <path d="M 372 320 C 382 260, 357 190, 307 160 C 297 154, 288 168, 294 178 C 334 220, 347 270, 327 320 C 317 345, 352 355, 372 320 Z" fill="url(#goldGrad)" />
+
+    <!-- Supporting Base Hands -->
+    <path d="M 160 310 C 190 380, 322 380, 352 310 C 335 328, 290 355, 256 355 C 222 355, 177 328, 160 310 Z" fill="#FFFFFF" />
+
+    <!-- Central Merciful Heart -->
+    <path d="M 256 280 C 240 245, 195 210, 195 165 C 195 130, 225 105, 256 135 C 287 105, 317 130, 317 165 C 317 210, 272 245, 256 280 Z" fill="url(#greenGrad)" />
+
+    <!-- Pure Water Droplet of Life / Hope inside Heart -->
+    <path d="M 256 160 C 264 175, 276 195, 276 210 C 276 222, 267 232, 256 232 C 245 232, 236 222, 236 210 C 236 195, 248 175, 256 160 Z" fill="#FFFFFF" />
+  </g>
+
+  <!-- Emblem Text Accent / Arch -->
+  <path d="M 120 420 Q 256 460 392 420" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.8" />
+</svg>
